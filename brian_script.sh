@@ -93,6 +93,21 @@ else
   echo "==> GitHub CLI already authenticated"
 fi
 
+# ── 7. Apps (Brave, Cursor) ───────────────────────────────────────────────────
+BREW_CASKS=(
+  brave-browser
+  cursor
+)
+
+echo "==> Installing apps: ${BREW_CASKS[*]}"
+for cask in "${BREW_CASKS[@]}"; do
+  if brew list --cask "$cask" &>/dev/null; then
+    echo "    $cask already installed"
+  else
+    brew install --cask "$cask"
+  fi
+done
+
 # ── Done ──────────────────────────────────────────────────────────────────────
 echo ""
 echo "==> Setup complete! Restart your terminal (or run: source ~/.bash_profile)"
