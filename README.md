@@ -1,6 +1,13 @@
 # dotfiles
 
-![dotfiles Banner](banner.svg)
+```
+  ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗
+  ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝██║██║     ██╔════╝██╔════╝
+  ██║  ██║██║   ██║   ██║   █████╗  ██║██║     █████╗  ███████╗
+  ██║  ██║██║   ██║   ██║   ██╔══╝  ██║██║     ██╔══╝  ╚════██║
+  ██████╔╝╚██████╔╝   ██║   ██║     ██║███████╗███████╗███████║
+  ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
+```
 
 > Your terminal should feel like yours.
 
@@ -14,7 +21,7 @@ Personal shell config for macOS. Nothing fancy — just aliases, colors, and PAT
 
 **Prompt** — colored, shows user, host, and current directory at a glance:
 ```
-15:32-vectorious@links-Mac-mini:~$
+15:32-user@hostname:~$
 ```
 
 **Aliases**
@@ -48,7 +55,7 @@ ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
 source ~/.bash_profile
 ```
 
-Or just use the [mac-mini-setup-claude](https://github.com/linkvectorized/mac-mini-setup-claude) script which does it automatically.
+Or use the [mac-mini-setup-claude](https://github.com/linkvectorized/mac-mini-setup-claude) script which does it automatically.
 
 ---
 
